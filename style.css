@@ -1,0 +1,365 @@
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background: #007bff;
+
+}
+
+.start-btn,
+.info-box,
+.quiz-box,
+.result-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2),
+                0px 6px 20px 0 rgba(0,0,0,0.19);
+    transition: all 0.3s ease;
+}
+
+.info-box.active-info,
+.quiz-box.active-quiz,
+.result-box.active-result {
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.start-btn button {
+    font-size: 25px;
+    font-weight: 500;
+    color: #007bff;
+    padding: 15px 30px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Rules Box */
+.info-box{
+    width: 540px;
+    height: 300px;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.info-box .info-title{
+    font-size: 27px;
+    font-weight: 500;
+    color:#007bff;
+}
+
+.info-box .info-list{
+    margin: 20px 0px;
+}
+
+.info-box .info{
+    margin: 5px 0;
+    font-size: 17px;
+}
+.info-box .info-list .info span{
+  color:#007bff;
+  font-weight: bold;
+}
+
+.info-box .buttons{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.info-box .buttons button{
+   width:110px;
+   padding: 4px 0px;
+   font-size: 15px;
+   margin-left: 10px;
+   outline: none;
+   cursor: pointer;
+   border: none;
+   border-radius:3px;
+   transition: all 0.1s ease-in;
+}
+
+.info-box .buttons .quit{
+    border: 1px solid red;
+}
+
+.info-box .buttons .continue{
+    color: white;
+    background: #007bff;
+}
+
+.info-box .buttons .quit:hover{
+    background: red;
+    color: white;
+}
+.info-box .buttons .continue:hover{
+    background: white;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+/* Question Box */
+.quiz-box{
+    width: 560px;
+    background: white;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0.9);
+}
+
+.quiz-box header{
+    position: relative;
+    z-index: 99;
+    height: 70px;
+    padding: 0 30px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+}
+
+.quiz-box header .title{
+    font-size: 20px;
+    color: #007bff;
+    font-weight: 500;
+}
+
+.quiz-box header .timer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:145px;
+    height: 45px;
+    background: #cce5ff;
+    border-radius: 5px;
+    padding: 0 8px;
+}
+
+.quiz-box header .timer .time-text{
+    font-weight: 400;
+    font-size: 17px;
+    user-select: none;
+}
+
+.quiz-box header .timer .timer-sec{
+    text-align: center;
+    width: 40px;
+    color:#007bff;
+}
+
+.quiz-box header .time-line{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: #007bff;
+}
+
+.quiz-box section{
+    padding: 25px 30px 20px 30px;
+}
+
+.quiz-box section .que-text{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.quiz-box section .option-list{
+    display: block;
+    padding: 20px 0;
+}
+
+.quiz-box section .option-list .option{
+    font-size: 17px;
+    background: aliceblue;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.quiz-box section .option-list .option:hover{
+    color:#004085;
+    background: #cce5ff;
+    border-color: #b8daff;
+}
+
+.quiz-box section .option-list .option:last-child{
+    margin-bottom: 0px;
+}
+
+
+.quiz-box section .option-list .option .icon {
+    height: 26px;
+    width: 26px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    line-height: 24px;
+}
+
+.quiz-box section .option-list .option .tick {
+    color: #23903c;
+    border-color: #23903c;
+    background: #d4edda;
+}
+
+.quiz-box section .option-list .option .cross {
+    color: #a42834;
+    background: #f8d7da;
+    border-color: #a42834;
+}
+
+.quiz-box section .option-list .option.correct {
+    color: #155724;
+    border-color: #d4edda;
+    background: #d4edda;
+}
+.quiz-box section .option-list .option.incorrect {
+    color: #721c24;
+    background: #f8d7da;
+    border-color: #f5c6cb;
+}
+.quiz-box section .option-list .option.disabled{
+    pointer-events: none;
+}
+
+
+
+.quiz-box footer{
+    height: 60px;
+    width: 100%;
+    padding:0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quiz-box footer .total-que span{
+    display: flex;
+    user-select: none ;
+}
+
+.quiz-box footer .total-que span p{
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+.quiz-box footer .next-btn{
+    display: none;
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    background: #007bff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.quiz-box footer .next-btn:hover{
+    background: white;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.result-box{
+    background: white;
+    width: 450px;
+    padding: 25px 30px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%,-50%) scale(0.9);
+}
+
+.result-box .icon{
+    font-size: 100px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.result-box .complete-text{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.result-box .score-text span{
+    display: flex;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.result-box .score-text span p{
+    font-weight: 500;
+    padding: 0 4px;
+}
+
+.result-box .buttons{
+    display: flex;
+    margin: 10px 0;
+}
+
+.result-box .buttons button{
+   width:110px;
+   padding: 4px 0px;
+   font-size: 15px;
+   margin-left: 10px;
+   outline: none;
+   cursor: pointer;
+   border: none;
+   border-radius:3px;
+   transition: all 0.1s ease-in;
+}
+
+.result-box .buttons .quit{
+    color: white;
+    background: red;
+}
+
+.result-box .buttons .quit:hover{
+    color:red;
+    background: white;
+    border: 1px solid red;
+}
+
+
+
+
