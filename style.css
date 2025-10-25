@@ -363,3 +363,130 @@ body{
 
 
 
+
+
+/* ===========================
+   📱 Responsive Design
+   =========================== */
+
+/* For devices below 768px width (tablets & mobiles) */
+@media screen and (max-width: 768px) {
+  .info-box,
+  .quiz-box,
+  .result-box {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .quiz-box header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .quiz-box header .title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .quiz-box header .timer {
+    width: 130px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .quiz-box section {
+    padding: 15px;
+  }
+
+  .quiz-box section .que-text {
+    font-size: 20px;
+  }
+
+  .quiz-box section .option-list .option {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .quiz-box footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .quiz-box footer .next-btn {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .info-box .info-title {
+    font-size: 22px;
+  }
+
+  .info-box .info-list .info {
+    font-size: 15px;
+  }
+
+  .info-box .buttons {
+    justify-content: center;
+  }
+
+  .info-box .buttons button {
+    width: 45%;
+    font-size: 14px;
+  }
+
+  .result-box {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .result-box .icon {
+    font-size: 70px;
+  }
+
+  .result-box .complete-text {
+    font-size: 18px;
+  }
+
+  .result-box .score-text span {
+    font-size: 16px;
+  }
+
+  .start-btn button {
+    font-size: 20px;
+    padding: 12px 25px;
+  }
+}
+
+/* For very small screens (below 480px) */
+@media screen and (max-width: 480px) {
+  .quiz-box header .title {
+    font-size: 16px;
+  }
+
+  .quiz-box section .que-text {
+    font-size: 18px;
+  }
+
+  .quiz-box section .option-list .option {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .info-box,
+  .quiz-box,
+  .result-box {
+    width: 95%;
+  }
+
+  .start-btn button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}
