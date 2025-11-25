@@ -5,28 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
+
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+          integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+          crossorigin="anonymous">
+
     <!-- Css File -->
     <link rel="stylesheet" href="style.css" />
-
 </head>
-<body>
-    <!-- Start the quiz button -->
-    <div class="start-btn"><button>Start Quiz</button></div>
+<body style="padding-top:90px;"> 
+
+    <!-- ============================
+         TOP FIXED MENU BAR
+    ============================= -->
+<!-- ===========================
+     RESPONSIVE SIDEBAR MENU
+=========================== -->
+
+
+
+    <!-- ============================
+         START QUIZ BUTTON
+    ============================= -->
+    <div class="start-btn"><button>Start Quiz/Exam</button></div>
 
     <!-- Info box -->
     <div class="info-box">
         <div class="info-title">
-            <span>Some Rules Of The Game</span>
+            <span>Some Rules Of The Exam/Quiz</span>
         </div>
         <div class="info-list">
-            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">1. You will have only <span>30 seconds</span> per each question.</div>
             <div class="info">2. Once you select your answer, it can't be undone.</div>
-            <div class="info">3. You can't select any option once time goes off.</div>
             <div class="info">4. You can't exit from the Quiz while you're playing.</div>
             <div class="info">5. You'll get points on the basis of your correct answers.</div>
+            <div class="info">6. At the end your final marks will be evaluated.</div>
+            <p>If you encounter any difficulties, you may seek assistance from the chatbots and AI voice assistants provided at the end.</p>
         </div>
+        
         <div class="buttons">
             <button class="quit">Exit Quiz</button>
             <button class="continue">Start Quiz</button>
@@ -43,31 +61,14 @@
             </div>
             <div class="time-line"></div>
         </header>
+
         <section>
-            <div class="que-text">
-                <!-- <span>What Does HTML stand for?</span> -->
-            </div>
-            <div class="option-list">
-                <!-- <div class="option">
-                    <span>Hyper Text Preprocessor</span>
-                    <div class="icon tick"><i class="fas fa-check"></i></div>
-                </div>
-                <div class="option">
-                    <span>Hyper Text Preprocessor</span>
-                    <div class="icon cross"><i class="fas fa-times"></i></div>
-                </div>
-                <div class="option">
-                    <span>Hyper Text Preprocessor</span>
-                </div>
-                <div class="option">
-                    <span>Hyper Text Preprocessor</span>
-                </div> -->
-            </div>
+            <div class="que-text"></div>
+            <div class="option-list"></div>
         </section>
+
         <footer>
-            <div class="total-que">
-                <!-- <span><p>2</p>of<p>5</p>questions</span> -->
-            </div>
+            <div class="total-que"></div>
             <button class="next-btn">Next</button>
         </footer>  
     </div>
@@ -78,15 +79,32 @@
             <i class="fas fa-crown"></i>
         </div>
         <div class="complete-text">You've completed the Quiz!</div>
-        <div class="score-text">
-            <!-- <span>You Got <p>2</p>out of <p>5</p></span> -->
-        </div>
+        <p>You can take help from the following Chatbot- AI voice Assistants</p>
+
+        <div class="score-text"></div>
+
         <div class="buttons">
             <button class="quit">End</button>
         </div>
+        <div class="side-menu">
+
+    <a href="https://ommik-chatbot-dws.netlify.app/" target="_blank" class="menu-btn blue">
+        💬 Chatbot Help
+    </a>
+
+    <a href="https://dws-smart-voice-chat-assistant.netlify.app/" target="_blank" class="menu-btn green">
+        🎤 AI Voice Assistant
+    </a>
+
+    <a href="https://dws-manual-voice-assistant.netlify.app/" target="_blank" class="menu-btn orange">
+        📘 About Voice Project
+    </a>
+
+</div>
     </div>
     
     <script src="script.js"></script>
     <script src="questions.js"></script>
+
 </body>
 </html>

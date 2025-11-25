@@ -2,223 +2,167 @@
 let questions = [
   {
     numb: 1,
-    question: "If cot θ = 7/8, evaluate: (1 + sin θ)(1 – sin θ) / (1 + cos θ)(1 – cos θ)",
-    answer: "49/64",
+    question: "What is the capital of india",
+    answer: "delhi",
     options: [
-      "7/8",
-      "49/64",
-      "8/7",
-      "64/49"
+      "delhi",
+      "gujarat",
+      "rajasthan",
+      "nagpur"
     ]
   },
   {
     numb: 2,
-    question: "In triangle ABC, right-angled at B, if tan A = 1/√3, find the value of sin A cos C + cos A sin C.",
-    answer: "0",
+    question: "Which among the following is a correct statement about the French Revolution?",
+    answer: "It awakened the republican goals among the French commoners",
     options: [
-      "1",
-      "√3/2",
-      "0",
-      "1/2"
+      "It gave women the right to vote",
+      "It gave France a permanent republican government",
+      "It continued for 5 years",
+      "It awakened the republican goals among the French commoners"
     ]
   },
   {
     numb: 3,
-    question: "Given that HCF (306, 657) = 9, find LCM (306, 657).",
-    answer: "22338",
+    question: "Who among the following leaders joined Gandhiji in the Champaran Satyagraha held on April 10, 1917?",
+    answer: "Rajendra Prasad",
     options: [
-      "22338",
-      "22308",
-      "22368",
-      "22238"
+      "Bal Gangadhar Tilak",
+      "Subhash Chandra Bose",
+      "Rajendra Prasad",
+      "None of these"
     ]
   },
   {
     numb: 4,
-    question: "Find the roots of the quadratic equation x² – 3x – 10 = 0 by factorisation.",
-    answer: "x = 5 or x = -2",
+    question: "In which year English was made the medium of instruction in India?",
+    answer: "1835 A.D.",
     options: [
-      "x = 5 or x = -2",
-      "x = 2 or x = -5",
-      "x = 10 or x = -3",
-      "x = -5 or x = -2"
+      "1844 A.D",
+      "1835 A.D.",
+      "1833 A.D.",
+      "1813 A.D."
     ]
   },
   {
     numb: 5,
-    question: "Find two consecutive positive integers, the sum of whose squares is 365.",
-    answer: "13 and 14",
+    question: "Who among the following had translated the famous drama Neel Darpan in English?",
+    answer: "Madhusudan Datta",
     options: [
-      "11 and 12",
-      "12 and 13",
-      "13 and 14",
-      "14 and 15"
+      "Madhusudan Datta",
+      "Dinabandu Mitra",
+      "Harish Chandra Mukerjee",
+      "Sisir Kumar Ghose"
     ]
   },
   {
     numb: 6,
-    question: "The altitude of a right triangle is 7 cm less than its base. If the hypotenuse is 13 cm, find the other two sides.",
-    answer: "Base = 12 cm, Altitude = 5 cm",
+    question: "A rise in price of one commodity will induce a fall in demand of another commodity, then the commodities are ___?",
+    answer: "Complimentary",
     options: [
-      "Base = 5 cm, Altitude = 12 cm",
-      "Base = 12 cm, Altitude = 5 cm",
-      "Base = 10 cm, Altitude = 6 cm",
-      "Base = 8 cm, Altitude = 7 cm"
+      "Complimentary",
+      "Supplementary",
+      "Competing",
+      "Auxiliary"
     ]
   },
   {
     numb: 7,
-    question: "Find the distance between the following pairs of points: (2, 3) and (4, 1).",
-    answer: "√8",
+    question: "Why Commercial banks are called creators of money?",
+    answer: "because the loans create deposits",
     options: [
-      "√2",
-      "√8",
-      "√10",
-      "√12"
+      "because they buy securities from the central government",
+      "because the loans create deposits",
+      "because they distribute the money in the system",
+      "because they purchase investments"
     ]
   },
   {
     numb: 8,
-    question: "Find the values of y for which the distance between the points P(2, –3) and Q(10, y) is 10 units.",
-    answer: "y = 3 or -9",
+    question: "In which of the following forms do banks maintain the Cash Reserve Ratio?",
+    answer: "Deposits in RBI",
     options: [
-      "y = 3 or -9",
-      "y = 3 or 9",
-      "y = -3 or 9",
-      "y = 2 or -10"
+      "Government Securities",
+      "Physical Cash in Hand",
+      "Deposits in RBI",
+      "A Combination of Cash and Government Securities in Hand"
     ]
   },
   {
     numb: 9,
-    question: "Find the coordinates of the point which divides the join of (-1, 7) and (4, –3) in the ratio 2 : 3.",
-    answer: "(1, 3)",
+    question: "How many members of Rajya Sabha are nominated by President of India?",
+    answer: "12",
     options: [
-      "(1, 3)",
-      "(2, 4)",
-      "(0, 2)",
-      "(3, 1)"
+      "2",
+      "10",
+      "12",
+      "15"
     ]
   },
   {
     numb: 10,
-    question: "Find the ratio in which the line segment joining the points (-3, 10) and (6, –8) is divided by the point (-1, 6).",
-    answer: "1 : 3",
+    question: "Who can remove the Chief Justice of Supreme Court?",
+    answer: "President on a resolution by parliament",
     options: [
-      "1 : 3",
-      "3 : 1",
-      "2 : 3",
-      "3 : 2"
+      "Parliament by resolution",
+      "Judges of supreme court by Majority",
+      "President on a resolution by parliament",
+      "President on his/ her own discretion"
     ]
   },
   {
     numb: 11,
-    question: "Databases are being used to __.",
-    answer: "All of the above",
+    question: "The Qualifications of a candidate for Attorney General must be equivalent to ___?",
+    answer: "A Judge of Supreme Court",
     options: [
-      "Store",
-      "Manipulate",
-      "Manage",
-      "All of the above"
+      "A Judge of High Court",
+      "A Judge of Supreme Court",
+      "A Minimum Practice of 10 years in High Courts",
+      "A Minimum Practice of 10 years in Supreme Court"
     ]
   },
   {
     numb: 12,
-    question: "In the database table, if candidate keys are not chosen as the primary key, they are called __.",
-    answer: "Alternate key",
+    question: "Maximum Jute mills are located in which among the following states?",
+    answer: "West Bengal",
     options: [
-      "Alternate key",
-      "Candidate key",
-      "Foreign key",
-      "None of the above"
+      "West Bengal",
+      "Assam",
+      "Andhra Pradesh",
+      "Uttar Pradesh"
     ]
   },
   {
     numb: 13,
-    question: "The __ key helps to build a relation between two tables.",
-    answer: "Foreign key",
+    question: "How many states of India share its border with Bhutan?",
+    answer: "4",
     options: [
-      "Alternate key",
-      "Candidate key",
-      "Foreign key",
-      "None of the above"
+      "2",
+      "3",
+      "4",
+      "5"
     ]
   },
   {
     numb: 14,
-    question: "If in the database table there are two fields — Roll Number and Admission Number — both are uniquely identified fields, and Roll Number is made as primary key, then Admission Number will be __.",
-    answer: "Alternate key",
+    question: "The Eastern Maritime Corridor (EMC) connects which two cities of India and Russia?",
+    answer: "Chennai and Vladivostok",
     options: [
-      "Alternate key",
-      "Candidate key",
-      "Foreign key",
-      "None of the above"
+      "Mumbai and Moscow",
+      "Chennai and Vladivostok",
+      "Cuttack and St. Petersburg",
+      "Bhubaneswar and Moscow"
     ]
   },
   {
     numb: 15,
-    question: "_ data type stores exactly the length specified; this data type uses a fixed number of characters.",
-    answer: "Text(fix) (Char)",
+    question: "Where is the headquarters of the International Labour Organisation located?",
+    answer: "Geneva, Switzerland",
     options: [
-      "Memo (Longvarchar)",
-      "Text(fix) (Char)",
-      "Text (Varchar)",
-      "None of the above"
-    ]
-  },
-  {
-    numb: 16,
-    question: "__ data type consists of number, integer, decimal, real or double type which can perform arithmetic calculation.",
-    answer: "Number Data type",
-    options: [
-      "Text Data type",
-      "Number Data type",
-      "Date Data type",
-      "Binary Data type"
-    ]
-  },
-  {
-    numb: 17,
-    question: "A specific record of the master table has more than one corresponding record in the related transaction table.",
-    answer: "One-to-many",
-    options: [
-      "One-to-One",
-      "One-to-many",
-      "Many-to-many",
-      "None of the above"
-    ]
-  },
-  {
-    numb: 18,
-    question: "What is the purpose of referential integrity in databases?",
-    answer: "All of the above",
-    options: [
-      "Accuracy",
-      "Consistency",
-      "Completeness",
-      "All of the above"
-    ]
-  },
-  {
-    numb: 19,
-    question: "SQL stands for __.",
-    answer: "Structured Query Language",
-    options: [
-      "Simple Query Language",
-      "Simple Question Language",
-      "Structured Query Language",
-      "None of the above"
-    ]
-  },
-  {
-    numb: 20,
-    question: "Data can be organized into __.",
-    answer: "Both a) and b)",
-    options: [
-      "Flat File",
-      "Relational",
-      "Both a) and b)",
-      "None of the above"
+      "New York, USA",
+      "Paris, France",
+      "Geneva, Switzerland",
+      "Vienna, Austria"
     ]
   }
-
 ];

@@ -490,3 +490,90 @@ body{
     padding: 10px 20px;
   }
 }
+
+
+
+
+/* ---------------------------------
+   RESPONSIVE SIDEBAR MENU DESIGN
+--------------------------------- */
+
+.side-menu {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+    z-index: 2000;
+}
+
+.side-menu .menu-btn {
+    display: block;
+    text-decoration: none;
+    padding: 12px 18px;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 2px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+
+/* Button Colors */
+.blue    { background:#007bff; border-color:#007bff; }
+.green   { background:#28a745; border-color:#28a745; }
+.orange  { background:#ff5722; border-color:#ff5722; }
+
+/* Hover Effects */
+.side-menu .menu-btn:hover {
+    background:white;
+    color: black;
+}
+
+/* -----------------------
+   TABLET VIEW (TOP BAR)
+----------------------- */
+@media screen and (max-width: 900px) {
+    .side-menu {
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        background: white;
+        padding: 15px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+
+    .side-menu .menu-btn {
+        font-size: 14px;
+        border-radius: 8px;
+    }
+}
+
+/* -----------------------
+   MOBILE VIEW (BOTTOM BAR)
+----------------------- */
+@media screen and (max-width: 600px) {
+    .side-menu {
+        bottom: 0;
+        top: auto;
+        position: fixed;
+        width: 100%;
+        padding: 10px;
+        justify-content: space-around;
+        background: white;
+    }
+
+    .side-menu .menu-btn {
+        padding: 10px 8px;
+        font-size: 13px;
+        text-align: center;
+        border-radius: 6px;
+    }
+}
+
