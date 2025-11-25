@@ -536,7 +536,7 @@ body{
 /* -----------------------
    TABLET VIEW (TOP BAR)
 ----------------------- */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 10000px) {
     .side-menu {
         top: 0;
         left: 0;
